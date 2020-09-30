@@ -1,0 +1,116 @@
+Create a program that will allow the user to create a grocery list of items.  The program will ask the user for the number of items.  It will then collect these items.  Before printing out a list, the program will sort the items in the array.
+
+inputs: Number of items, itemName
+outputs:  list
+
+
+30,000 foot view
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ask user how many items for the list
+fill the list
+Sort the list
+print the list
+
+Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NumItems int
+List String
+ItemName string
+index int
+
+
+Pseudocode
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Ask user how many items for the list
+NumItems = input(How many items:  ")
+
+*Fill the list
+for index in range(NumItems)
+	ItemName = input("Get an item from the user)
+	list[index] = ItemName
+	*index = index + 1
+
+*Sort the list
+swap string
+sortItem string
+flag 
+index 
+
+
+until flag != 0
+	flag = 1
+	index = 1
+	
+
+	for index in range(NumItems-1)
+		sortItem = list[index]
+	
+		if sortItem > list[index + 1] then
+			swap = sortItem
+			list[index] = List[index + 1]
+			list[index + 1] = swap
+		end if
+		index = index + 1
+	end for
+end loop
+
+*Print the sorted list
+oneItem string
+index = int
+
+for index in range(NumItems)
+	oneItem = list[index]
+	print oneItem
+	index = index + 1
+end for
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

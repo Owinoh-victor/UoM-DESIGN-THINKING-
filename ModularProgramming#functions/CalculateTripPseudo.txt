@@ -1,0 +1,53 @@
+30,000 foot view
+**********************
+Fill name array
+Fill miles array
+Fill gallons array
+Calculate Trip MPG
+Output name, miles, gallon and MPG for each trip
+
+
+Main
+   Ask user for number of trips
+   input trips
+   GetNames
+   Get Miles
+   Get Gallons
+   CalcMPG
+   Print Trip   
+End Program
+
+Procedure Get Names
+	While count < trips
+		Set TripName[Count] = Name
+		Write “How many miles did you drive? “
+		Set count = count + 1
+	end while
+End Procedure
+Procedrue Get miles
+	while count < trips
+		Input Miles
+	 	Set TripMiles[Count] = Miles
+		Set count = count + 1
+	End While
+End Procedure
+Procedure Get Gallons
+	While count < trips
+		Write “How many gallons of gas did you use on this trip?”
+	 	Input Gallons
+		Set count = count + 1
+	End while
+End Procedure
+Procedure CalcMPG
+	while count < trips
+		TripMGP[count] = miles/gallons
+		Set count = count + 1
+	end while
+End Procedure
+Procedure PrintTrip
+	While count < trips
+	 	Write TripName[count] + TripMiles[Count] + TripMPG[count]
+	 	Set count = count + 1
+   	End While(count)
+End Procedure
+

@@ -1,0 +1,48 @@
+Develop a program that will keep track of a list of rocks and 
+allow the user to search the list.
+
+inputs:  different types of rocks, amount of rocks, search item
+outputs:  out list of rocks, found item
+
+30,000 foot view
+****************************************
+Build our list of rocks
+Print out the list of rocks
+Search the list of rocks
+
+#Build our list of rocks
+
+Ask the user for the number of rocks
+Declare the rocks array
+until index > Number of rocks
+	Ask user for a rock type
+	rocks array[index] = rock type
+	index = index + 1
+end loop
+
+#Print our list of rocks
+index = 1 (*0 when using python)
+until index > Number of rocks
+	singlerock = rocks array[index]
+	print singlerock
+	index = index + 1
+end loop
+
+#Search the list of rocks
+index = 1 (#0 When using python)
+Ask the user for the name of the rock to search for
+until index > Number of rocks or found == true
+	singlerock = rocks array[index]
+	if singlerock = searchrock then
+		found == true
+		print "We found your rock!"
+	else
+		found == false
+		index = index + 1
+	end if
+end loop
+
+#print out message if item has not been found
+if found == false then
+	print "Sorry we did not find your rock"
+end if

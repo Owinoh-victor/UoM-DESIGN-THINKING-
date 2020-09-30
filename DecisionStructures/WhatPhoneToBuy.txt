@@ -1,0 +1,115 @@
+Write a program to help a user to decide what phone they want to purchase. 
+ The program will ask the user for the type of phone, i.e. operating system and
+ then how much money they wish to spend.  
+The program will print out the phone selection and type.
+
+inputs:  How much money, operating system
+problem statement:  Help the user pick a phone.
+outputs:  choice of phone and options
+
+Variables
+----------------------------------
+phoneType	string
+money		float
+options		string
+
+30,000 foot view
+----------------------------------
+1.  Get amount of money and OS from user
+2.  Determine phone type and options
+3.  Output phone type and options to the user
+
+Pseudocode
+----------------------------------
+Declare variables
+phoneType as string
+money as float
+option as string
+
+1.  Get amount of money and OS from user
+	write "Enter in the type of phone you want either iPhone or Droid:  "
+	input phoneType
+	write "Enter in the amount of money you wish to spend:  "
+	input money
+
+	OR
+
+	Prompt user for type of phone and money they wish to spend\
+	input phoneType and money
+
+2.  Determine phone type and options
+	if phoneType == "iPhone" then
+		if money >= 399 then
+			option = "iPhone 5, 64 GB"
+		else if money >= 299 then
+			option = "iPhone 5, 32 GB"
+		else if money >= 199
+			option = "iPhone 5, 16 GB"
+		else
+			option = "No Phone, not enough money"
+		end if
+	else if phoneType == "Droid"
+		if money >= 299 then
+			option = "Samsung Galaxy Note II"
+		else if money >= 140
+			option = "Samsung Galaxy S4"
+		else if money >= 100
+			option = "Samsung Galaxy S3"
+		else
+			option = "No Phone, not enough money"
+		end if
+	else
+		option = "You did not enter Droid or iPhone."
+	end if
+3.  Output phone options and type to the user
+	print "You selected " + phoneType
+	print "With the following option:  " + option
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

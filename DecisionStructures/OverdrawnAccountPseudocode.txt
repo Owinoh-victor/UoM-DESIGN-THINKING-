@@ -1,0 +1,77 @@
+Develop a program to help us determine the cost when we overdraw our account.  The user will enter in their balance and the amount of the check.  If the check is bigger than the balance the account is considered overdrawn.  If the overdrawn amount is greater than $25 the fee is $10.  If the overdrawn amount is greater than $50 the fee is $25.  If the overdrawn amount is greater than $100 the fee is $40.
+
+inputs: check, balance
+Problem Statement:  Trying to figure out if there will be an overdraft fee
+Outputs: balance, check, fee
+
+Variables
+--------------------
+check		float
+balance		float
+fee		float
+overdrawn	float
+
+
+30,000 foot view
+-------------------------------
+1. Ask the user for the amount of the check and the balance
+2. Determine if there is a fee and if there is a fee the amount
+3. Print out the balance, check and fee to the user
+
+
+
+Pseudocode
+------------------------------
+1.  Ask the user for the amount of the check and the balance
+	prompt "Enter in your balance:  "
+	input balance
+	prompt "Enter the amount of your check:  "
+	input check
+
+	OR
+	
+	prompt user for the balance and the amount of the check
+	input check and balance	
+
+
+2. Determine if there is a fee and if there is a fee the amount
+	if check > balance then
+		
+		overdrawn = check - balance
+		
+		if overdrawn >= 100 then
+			fee = 40
+		else if overdrawn >= 50 then
+			fee = 25
+		else if overdrawn >= 25 then
+			fee = 10
+		else
+			fee = 5
+		end if
+		
+		print("Sorry you have an overdraft fee of:  $" + fee)
+
+	else
+		fee = 0
+		print("You did not overdraw your account")
+	end if
+3.  Print out the balance, check and fee to the user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

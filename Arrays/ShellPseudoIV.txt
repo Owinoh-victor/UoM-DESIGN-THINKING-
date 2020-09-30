@@ -1,0 +1,35 @@
+Problem:  Create a program that will allow kids on vacation to collect shells on a beach.  Each time this program is run the number of children collecting shells and the number of days they will collect shells will vary.  So at the beginning of the program you will need to ask the user how many days the children will be collecting shells.  The program will continue until the user is done entering in data for each child.  Assume that at the start of each day, each child is given a bag to store their shells.  The program will take these daily shells and add it to the groups shells.  The user wants to see a total number of shells for each user and their average number of shells.  At the end of the program  the user wants to see the total number of shells collected for the group and the average number of shells collected per child.
+
+Inputs:  Number of days, Name of each child, number of shells collected each day
+Outputs:  total number of shells for each child, the total number of shells and average for the group
+
+30,000 foot view
+*******************************************
+Get name of each child and shells
+Figure out total shells and average
+print out total shells and average
+
+Pseudocode
+*******************************************
+Ask the user how many days they will be collecting shells
+
+loop until user wants to quit
+     ask for the name of the kid
+     loop until days = NumDays
+        get number of shells collected
+	    add new shells to old shells
+        add to days counter
+     end loop
+     add to child counter
+     determine child average
+     add kid's shells to group's shells
+     add kid's average to group's average
+     print out child's average
+     print out child's total
+     zero out child's total
+     zero out days counter
+     Ask if the user wants to add another child
+end loop
+determine group's average
+print out group's average
+print out group's total

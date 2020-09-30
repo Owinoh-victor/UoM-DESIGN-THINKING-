@@ -1,0 +1,52 @@
+this program uses a simple loop and if structres to navigate a menu
+that calculates a total before and after taxes(.06) are applied
+
+
+
+##varibles
+
+choice = int()
+price = float()
+total = float()
+tax = float()
+
+
+##IF STRUCTURE
+
+
+while choice != 7:
+    
+choice = ("please select an item: ")
+price = 0
+
+  if (choice == 1):
+     price = 9.99
+        
+  elif (choice == 2):
+     price = 5.99
+        
+  elif (choice == 3):
+     price = 12.99
+        
+  elif (choice == 4):
+     price = 11.99
+        
+  elif (choice == 5):
+     price = 8.99
+        
+  elif (choice == 6):
+     price = 5.99
+        
+  elif (choice > 7) or (choice < 0):
+     print("OPTION NOT FOUND")
+
+    total = total + price
+
+
+tax = total *.06
+total = total + tax
+
+
+print("your tax total was ",tax)
+print("TOTAL COST: ",total)
+

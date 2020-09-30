@@ -1,0 +1,46 @@
+Create a program that will tell the user what color they have.  The user will be asked for two primary colors and the program will tell the use what new color they created.
+
+inputs:  2 primary colors
+outputs:  new color
+
+30,000 foot view
+Ask the user for the primary colors
+Determine the new color
+Output the new color
+
+
+Pseudocode
+Ask the user for the primary colors
+     Write "Enter red, yellow or blue:  "
+     input FirstColor
+     Write "Enter red, yellow or blue:  "
+     input SecondColor
+
+Determine the new color
+    if FirstColor == "yellow" 
+          if SecondColor == "blue" then
+              NewColor = "green"
+          else if SecondColor == "red" then
+              NewColor = "orange"
+          else
+              NewColor = "yellow"
+    else if FirstColor == "red"
+          if SecondColor == "blue" then
+             NewColor = "purple"
+          else if SecondColor == "yellow" then
+             NewColor = "orange"
+          else
+             NewColor = "red"
+    else if FirstColor == "blue" then
+          if SecondColor == "yellow" then       
+             NewColor = "green"
+          else if SecondColor == "red" then
+             NewColor = "purple"
+          else 
+             NewColor = "blue"
+    
+    else
+          write "You did not enter red, yellow or blue."
+
+Output the new color
+    Write "Your new color is:  " + NewColor

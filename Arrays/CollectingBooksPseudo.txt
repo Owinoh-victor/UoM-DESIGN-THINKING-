@@ -1,0 +1,27 @@
+Declare Variables
+	NumBooks = 0
+	Book = 0
+	Books[] = 0
+	Index = 0
+	Number = 1
+
+
+Get NumBooks
+
+Books = [" "] * NumBooks
+
+While Index < NumBooks:
+	Get Book
+	Books[Index] = Book
+	Index = Index + 1
+
+Index = 0
+
+Write
+Write "Your list of books"
+Write "******************************************"
+
+While Index < NumBooks:
+	print(Number,". ", Books[Index])
+	Index = Index + 1
+	Number = Number + 1

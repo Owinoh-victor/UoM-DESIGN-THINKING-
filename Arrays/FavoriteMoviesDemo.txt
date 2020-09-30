@@ -1,0 +1,25 @@
+Declare Variables
+MoviesNum = 0
+Movies[0] = 0
+Title = "nothing"
+Index = 1
+
+Ask user for the number of titles they wish to collect
+Write("Enter the number of titles you wish to add to your list")
+input MoviesNum
+
+Get the titles of movies
+Until Index > MoviesNum
+   Write("Enter a movie title")
+   input Title
+   Movies[Index] = Title
+   Index = Index + 1
+End Until
+
+Index = 1
+
+Print out movie titles
+Until Index > MovieNum
+   Write(Index, ".  "+ Movies[Index])
+   Index = Index + 1
+End Until

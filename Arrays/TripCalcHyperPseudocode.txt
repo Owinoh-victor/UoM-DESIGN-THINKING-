@@ -1,0 +1,132 @@
+Create a program that will allow you to determine the cost to travel to and from a particular destination.  Within each destination there can be multiple stops.  The program will ask the user for the name of the destination and the number of stops.  It will also ask for the car's current miles per gallon and the cost of fuel.  For each stop it will ask the user for the number of miles between each stop.  It will then determine the number of gallons and the cost.
+
+inputs:  destination, number of stops each way, mpg, fuel cost, miles between each stop
+outputs:  total cost between each stop, total miles between each stop, total cost of the trip one way, total miles for the trip one way, total cost of the trip both ways and total miles of the trip both ways
+
+30,000 foot view
+*****************************************
+Ask the user the destination, car mpg and fuel cost
+Determine cost of the trip
+Output total cost
+
+Pseudocode
+*****************************************
+1.  Ask the user the destination, car mpg and fuel cost
+
+	Validation for mpg
+
+	while flag = False
+		if mpg is a number then
+			convert string to number
+			if mpg > 0 then
+				flag = true
+			else
+				Ask the user for another number
+			end if
+		else
+			Ask the user for another number
+		end if
+	loop
+	flag = False
+
+	Validation for Fuel Cost
+
+	while flag = False
+		if Fuel Cost is a number then
+			convert string to number
+			if Fuel Cost > 0 then
+				flag = true
+			else
+				Ask the user for another number
+			end if
+		else
+			Ask the user for another number
+		end if
+	loop
+	flag = False
+
+
+2.  Determine cost of the trip
+    while paths <=2
+	Ask user for number of stops
+
+	Validate stops to make sure it is a number
+
+	while flag = False
+		if stops is a number then
+			convert string to number
+			if stops > 0 then
+				flag = true
+			else
+				Ask the user for another number
+			end if
+		else
+			Ask the user for another number
+		end if
+	loop
+	flag = False
+
+	while stops <= NumStops
+	    Ask user for number of miles
+	    	
+            Validation for miles
+ 
+            while flag = False
+		if miles is a number then
+			convert string to number
+			if miles > 0 then
+				flag = true
+			else
+				Ask the user for another number
+			end if
+		else
+			Ask the user for another number
+		end if
+	    loop
+            flag = False
+
+            gallons = NumMiles/mpg
+	    stopCost = gallons * FuelCost
+	    TotalOneWayGallons = TotalOneWayGallons + gallons
+	    TotalOneWayCost = TotalOneWayCost + stopCost
+	    stops = stops + 1
+	    print gallons and FuelCost		
+	end while
+	Print TotalOneWayGallons
+	Print TotalOneWayCost
+	TotalTripGallons = TotalTripGallons + TotalOneWayGallons
+	TotalTripCost = TotalTripCost + TotalOneWayCost
+	TotalOneWayGallons = 0
+	TotalOneWayCost = 0
+	stops = 1
+	paths = paths + 1
+    end while
+3.  Output TotalTripGallons and TotalTripCost
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+Problem Statement:  This program will ask the user for the names of sales persons and their sales figures.  It will print out the names and the figures.
+
+Inputs:  the names of the salespersons and their sales figures
+Outputs:  the names of the salesperson and their sales figures
+
+30,000 Foot View
+Get the names of the Sales People
+Get the sales figures
+Print out the Sales Figures
+
+Pseudocode
+Get the names of the Sales People
+	Declare local variables
+	index
+	saleperson
+		
+	Loop to populate array
+	for index = 0 to 4
+		prompt "Enter the name of the sales person"
+		input salesperson
+		assign salesperson to the array
+	Next
+
+Get the sales figures for each sales person
+	Declare local variables
+	index
+	salesfigure
+		
+	Loop to populate array
+	for index = 0 to 4
+		prompt "Enter the sales figure"
+		input salesfigure
+		assign salesfigure to the array
+
+Print out the sales figures and names
+	Declare local variables
+	index
+	salesperson
+	salesfigure
+	
+	Loop to unload both arrays
+	for index = 0 to 4
+		salesperson = PersonArray[index]
+		salesfigure = SalesArray[index]
+		print ("Salesperson:  " + salesperson + "     " + "Sales Figure:  " + salesfigure)
+	

@@ -1,0 +1,39 @@
+Inputs:  player name, jersey number, at bats, hits
+Outputs:  player name, jersey number, average
+Problem Statement:  this program will ask the user for the name and jersey number, at bats and hits.  It will then determine the batting average and display that to the user
+
+Variable Name			Data type
+name					string
+jersey_num				integer
+at_bats					integer
+hits					integer
+average					float
+
+30,000 foot view
+1).  Ask user for name, jersey number, at bats, hits
+2).  Calculate the batting average (hits/at bats)
+3).  Display name, jersey number and average
+
+
+
+Pseudocode
+1).  Ask user for name, jersey number, at bats, hits
+
+	Write “Enter the name of the player:  “
+	Input name
+	Write “Enter the jersey number:  “
+	Input jersey_num
+	Write “Enter the number of times this player has batted:  ”
+	Input at_bats
+	Write “Enter the number of times this player hit the ball:  “
+	Input hits
+
+2).  Calculate the batting average (hits/at bats)
+	average = hits/at bats
+	
+3).  Display name, jersey number and average
+
+	write "Player Name:  " + name
+	write "Player Jersey Number:  " + jersey_num
+	write "Batting Average:  " + average
+	

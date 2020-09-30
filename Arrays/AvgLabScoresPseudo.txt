@@ -1,0 +1,53 @@
+Write a program that allows the user to determine their lab average grade.  Allow the user to enter in the number of labs. Output the average score.
+
+inputs:  score, Number of labs
+outputs:  average
+
+30,000 foot view
+******************************************
+Ask how many labs
+Fill the scores array
+Determine the average
+Output the average
+
+
+Pseudocode
+*****************************************
+1).  Ask how many labs
+	prompt "Enter the number of labs:  ")
+	input NumLabs
+
+2).  Fill the scores array
+	until index > NumLabs
+		prompt "Enter a lab score:  ")
+		input labscore
+		scores[index] = labscore
+		index = index + 1
+	end loop
+
+3).  Determine average
+	index = 1
+	until index > NumLabs
+		onescore = scores[index]
+		totalscores = totalscores + onescore
+		index = index + 1
+	end loop
+
+	average = totalscores/NumLabs
+
+4).  Output the average
+	print ("Your average grade is:  "+ average)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
