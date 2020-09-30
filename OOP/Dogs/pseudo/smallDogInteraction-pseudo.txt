@@ -1,0 +1,15 @@
+#Uses classes/SmallDog class
+
+Declare bark as String
+Declare running as string set to "yes"
+
+Declare sd as new SmallDog("Brian", "chiwawa", "tan", 6)
+Call sd.dogInfo()
+while running = "yes"
+	Call sd.dogInfo()
+	Prompt "Do you want the dog to bark? (yes/no/pet)" input into bark
+	if bark == "yes"
+		call sd.bark();
+	else if bark == "pet"
+		call sd.pet();
+	Prompt "Again? (yes/no)" input into running

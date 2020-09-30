@@ -1,0 +1,81 @@
+Write a program that allows the user to calculate how much time they need to spend on homework in a week.  The user will be asked how many classes they have and the number of credit hours per class.  The program will tell the user the number of hours they need to spend doing homework and the total number of credit hours they are taking this term.  Estimate 2 hours per credit hour for homework.
+
+inputs:  Number of classes, Number of credit hours per class
+
+outputs:  Time spend doing homework, Total number of credit hours
+
+Variables:
+***************************
+NumClasses	integer
+CreditHours	integer
+Count		integer
+TimeSpent	float
+TotalCredits	integer
+Hours		float  set to 2  (constant)
+
+30,000 foot view
+****************************
+Ask user how many classes they are taking
+Determine the time spent doing homework
+Output Time spent and total credit hours
+
+Pseudocode
+****************************
+1.  Ask user how many classes they are taking
+	write "Enter the number of classes you are taking:  "
+	input NumClasses
+
+2.  Determine the time spent doing homework
+	Until count >= NumClasses
+		Write "How many credit hours is this class:  "
+		input CreditHours
+		count = count + 1
+		TotalCredits = TotalCredits + CreditHours
+	End Loop
+	TimeSpent = Hours * TotalCredits
+
+3.  Output Time spent and total credit hours
+	Write "You are taking a total of " + TotalCredits + " hours"
+	Write "Plan on spending " + TimeSpent + " doing Homework this term :("
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

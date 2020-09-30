@@ -1,0 +1,52 @@
+Class BankAccount (UserBalance, UserAmount)
+	Declare Balance As Float 
+	Declare Amount As Float
+
+	Subprogram SetBalance()
+		Set Balance = UserBalance
+	End Subprogram
+
+	Subprogram SetAmount() 
+		Set Amount = UserAmount
+	End Subprogram
+
+	Sunprogram AddDeposit()
+		Set Balance = Balance + Amount
+	End Subprogram
+
+	Subprogram DeductWithdrawal()  
+		if (Balance – Amount) < 0 then
+       			print “You do not have enough money”
+    		else
+       			Balance = Balance - Amount
+		end if
+	End Subprogram
+   
+   	Subprogram ReturnBalance()
+      		Return Balance
+   	End Subprogram
+End Class
+
+
+
+Write "Enter it D if you want to make a deposit or W if you want to make a withdrawal:"
+Input choice
+
+Write "What is your current balance?  "
+Input mybalance
+
+Write " what is the a mount you wish to deposit or withdrawal?"
+Input myamount
+
+Set myAccount = NEW BankAccount(MyBalance, MyAmount)
+MyAccount.SetBalance()
+MyAccount.SetAmount()
+
+If choice = "D" then
+     MyAccount.AddDeoisit()
+else
+     MyAccount.DedectWithdrawal()
+end if
+
+Write "Your new balance is:  " + MyAccount.ReturnBalance
+

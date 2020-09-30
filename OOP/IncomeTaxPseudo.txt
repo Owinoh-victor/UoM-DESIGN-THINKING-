@@ -1,0 +1,27 @@
+#This program will determine what percentage of income tax the user has to pay depending on their income.
+
+input: income
+output: tax percentage
+
+
+variables:
+income
+taxpercentage
+
+
+Determinetax(newimcome)
+
+subprogram determines taxpercentage
+
+if income >=50,000
+	then taxpercentage = 5%
+elif income >= 100,000 
+	then taxpercentage = 7%
+else
+	then taxpercentage = 9%
+
+until continue = no
+	Ask the user what their income is
+	create new object determinetax
+	ask the user if they would like to continue
+end loop

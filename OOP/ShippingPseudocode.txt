@@ -1,0 +1,67 @@
+The Write a program that calculates the cost to ship a product.
+
+30,000 foot view
+****************************
+Get shipping destination
+Get order total
+Calculate shipping
+Calculate Total order with shipping
+Print shipping cost and total to the user
+
+Class ShippingCost
+  ShippingCost Constructor (newDestination, newOrderTotal)
+	destination = newDestination
+	shippingcost = 0
+	ordertotal = newOrderTotal
+	GrandTotal = 0.0
+  End Constructor
+  Subprogram CalculateshippingCost()
+		if destination = "USA" then
+			if ordertotal < = 50 then
+				shippingcost = 6
+			else if ordertotal <= 100 then
+				shippingcost = 9
+			else if ordertotal <= 150 then
+				shippingcost = 12
+			else 
+				shippingcost = 0
+			end if
+		else
+			if ordertotal < = 50 then
+				shippingcost = 8
+			else if ordertotal <= 100 then
+				shippingcost = 12
+			else if orde total <= 150 then
+				shippingcost = 15
+			else 
+				shippingcost = 0
+			end if
+		end if
+	end subprogram
+    subprogram CalculateGrandTotalotal()
+		GrandTotal = shippingcost + ordertotal
+	end subprogram
+	subprogram ReturnGrandTotal()
+		return GrandTotal
+	end subprogram
+	subprogram ReturnShippingCost()
+		return ShippingCost
+	end subprogram
+
+
+Program psuedocode
+Get shipping destination and order total
+	write "Enter US if shipping in the USA or CA if shipping in Canada."
+	input userDestination
+	write "Enter the total cost for the order"
+	input userOrderTotal
+
+Calculate Shipping Cost and Grand Total
+	MyShipping = new ShippingCost(userDestination, userOrderTotal)
+	MyShipping.CalculateshippingCost()
+	MyShipping.CalculateGrandTotalotal()
+	
+Print out shipping cost & grand total
+	write "Shipping Cost:  $" + MyShipping.ReturnShippingCost()
+	write "Grand Total:  $" + MyShipping.ReturnGrandTotal()
+

@@ -1,0 +1,102 @@
+Inputs: Name, TestScore1, TestScore2
+
+Problem statement: Determine the total test score between test score 1 and 2
+
+Outputs: Name, TestScore1, TestScore2, TestTotal
+
+
+Variables
+============================================
+Name = string
+TestScore1 = integer
+TestScore2 = integer
+TestTotal = float
+Continue = yes
+
+
+30,000 foot view
+============================================
+* Get Inputs
+* Determine Test Total
+* Display Name, TestScore1, TestScore2, TestTotal
+
+Construct class DetermineTestTotal
+==============================================
+this.TestTotal = this.TestScore1 + this.TestScore2
+
+
+PseudoCode
+=====================================================
+Class Item = newTestScores(MainName, MainTestScore1, MainTestScore2)
+
+attributes
+	Name = string
+	TestScore1 = integer
+	TestScore2 = integer
+	TestTotal = float	
+
+
+subprogram Name
+
+	Name = newName
+
+end subprogram
+
+
+subprogram TestScore1
+
+	TestScore1 = newTestScore1
+
+end subprogram
+
+subprogram TestScore2
+
+	TestScore2 = newTestScore2
+
+end subprogram
+
+subprogram TestTotal
+
+	TestTotal = newTestTotal
+
+end subprogram
+
+subprogram DetermineTestTotal
+	
+	this.TestTotal = this.Testscore1 + this.TestScore2
+
+end subprogram
+
+subprogram ReturnName
+	
+	Return this.Name
+
+end subprogram
+
+subprogram ReturnTestScore1
+
+	Return this.TestScore1
+
+end subprogram
+
+subprogram Return TestScore2
+
+	Return this.TestScore2
+
+end subprogram
+
+subprogram Return TestTotal
+
+	Return this.TestTotal
+
+end subprogram
+
+end class
+
+
+until Continue = "yes" then
+	Ask user for their name, testscore 1 and 2
+	Create new object TestScores
+	display Name, TestScore 1 and 2, and TestTotal
+	Ask user if they want to continue
+end loop

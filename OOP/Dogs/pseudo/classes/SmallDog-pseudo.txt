@@ -1,0 +1,29 @@
+Define public class SmallDog extending Dog
+
+	Declare public field scared as Bool set to True
+
+	Declare public constructor method SmallDog(name, breed, color, weight)
+		Set this.name to name
+		Set this.breed to breed
+		Set this.color to color
+		if weight < 15
+			Set this.weight to weight
+		else
+			Write "That is a big dog!"
+
+	Declare public method bark()
+		if sleeping == False 
+			if scared == True
+				Write "The dog is scared, try to pet it"
+			else
+				if timesBarked >= 14
+					Set this.sleeping to True
+					Write "Yip!"
+				else
+					Write "Yip!"
+					Increment this.timesBarked by 1
+		else
+			Write "The dog is sleeping..."
+
+	Declare public method pet()
+		Set this.scared to False

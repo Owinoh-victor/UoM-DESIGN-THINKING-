@@ -1,0 +1,12 @@
+Declare WeeklyBugs As Integer
+Declare DailyBugs As Integer
+Declare Days as integer
+Set Days = 1
+While Days <= 7
+   Write “Enter today's collection of bugs:  "
+   Input DailyBugs
+   Set WeeklyBugs = WeeklyBugs + DailyBugs
+   Set Days = Days + 1   
+End While
+
+Write “You collected " + WeeklyBugs + " this week."

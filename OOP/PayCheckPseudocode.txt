@@ -1,0 +1,41 @@
+Public DeterminePay(NewHours, NewRate)
+		Set NumHours = NewHours
+		Set Pay = NewRate
+		Call DetermineGross()
+		Call DetermineDeduc()
+		Call DetermineNet()
+	End Constructor
+	Public Subprogram DetermineGross()
+		Gross = NumHours * Pay
+	End Subprogram
+	Public Subprogram DetermineDeduct()
+		Deduc = Gross * 0.35
+	End Subprogram
+	Public Subprogram DetermineNet()
+		Net = Gross – Deduc
+	End Subprogram
+	Public Function ReturnGross()
+		Return Gross
+	End Function
+	Public Function ReturnNet()
+		Return Net
+	End Function
+	Public Function ReturnDeductions()
+		Return Deduc
+	End Function
+
+
+Do Until Continue = “No”
+Get Hours worked and Pay Rate from the User
+	Write “Enter the number of hours worked.”
+	Input Hours
+	Write “Enter the pay rate”
+	Input Rate
+Determine Net Pay
+	Gross Pay = NewEmp.Gross
+	Deductions = NewEmp.Deduct
+	Net = NewEmp.Net
+Output Gross Pay, Deductions and Net Pay
+	Write “The employee’s Gross Pay is:  $” + Gross Pay
+	Write “ The employee’s Deductions is:  $” + Deductions
+	Write “The employee’s Net Pay is:  $” + Net Pay

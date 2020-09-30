@@ -1,0 +1,70 @@
+By: Yousif Alawsachi
+Instructor: E. Jenaway
+Course: ITCS-1140
+Date: 05/07/2016
+		
+StudentSuccess: Income Tax
+
+		Variables:				Datatype:
+		==========			=========
+		IncomeAmount			(Float)
+
+Problem Statement: The program that will ask the user for the amount of yearly income they receive. Then, it 
+will calculate the income tax. Finally, the program will output the income after tax and the total tax in dollars
+
+
+30,000 Foot View:
+''''''''''''''''''''''''''''''''''
+* Create a class and determine/define the income after tax
+* Detemine and define the tax based on income
+* Detemine and define tax total
+* Detemine and define then net pay
+* Return all of income, tax, and nepay
+* Define the main, input to ask the user for income, call (Tax, TaxTotal, NetPay), output the 
+  income after tax and tax in dollars
+
+
+
+Pseudocode:
+***********
+* Make a class and determine/define the income after tax
+	. Create the IncomeCalcualtion class then
+	. define in it within self and NewIncome then (For creating and defining the constructore)
+	. Set self.__income = NewIncome
+        	. Set self.__rate = (Float)
+        	. Set self.__tax = (Float)
+       	. Set self.__netpay = (Float)
+	
+* Detemine and define the tax based on income
+	. Define DetermineTax within self then
+	. use an if structore to determine based tax for (income <= 20000 then rate = 0.0, income >= 20000 
+	  and <100000 then rate = 0.25, income 100000 and 250000 then rate = 0.35, else then rate = 0.45) 
+
+* Detemine and define tax total
+	. Define DetermineTaxTotal within self then
+	. self.__tax = self.__income * self.__rate (This for calculating the tax total)
+
+* Detemine and define then net pay
+	. Define DetermineNetPay within self then
+	. self.__netpay = self.__income - self.__tax (This for calculating the net pay)
+
+* Return all of income, tax, and nepay
+	. Define GetIncome within self then
+	. return self.__income (This for returning the income amount)
+	. Define GetTax within self then
+	. return self.__tax (This for returning the tax rate)
+	. Define GetNetPay within self then
+	. return self.__netpay (This for returning the net pay)
+
+* Define the main, input to ask the user for income, call (Tax, TaxTotal, NetPay), output the 
+  income after tax and tax in dollars
+	. Set IncomeAmount = (Float)
+	. IncomeAmount = float(input("Enter your income: $")) (This for getting the income amount from the user)
+	. TaxCalc = IncomeCalculation(IncomeAmount) (This for creating an object based of the income calculation class)
+	. TaxCalc.DetermineTax() (This for calling the tax rate)
+    	. TaxCalc.DetermineTaxTotal() (This for calling the tax total)
+    	. TaxCalc.DetermineNetPay() (This for calling the net pay)
+	. Output the total income after tax and the total tax in dollars
+
+
+         

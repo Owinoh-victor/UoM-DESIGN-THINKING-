@@ -1,0 +1,24 @@
+Class BankAccount (UserBalance, UserAmount) 
+     
+     BankAccount Constructor
+	Declare Balance As Float 
+	Declare Amount As Float
+	Set Balance = UserBalance
+	Set Amount = UserAmount
+     End Constructor
+
+     Sunprogram AddDeposit()
+	Set Balance = Balance + Amount
+     End Subprogram
+
+     Subprogram DeductWithdrawal()  
+	If (Balance – Amount) < 0 then
+           print “You do not have enough money”
+        else
+           Balance = Balance - Amount
+     End Subprogram
+   
+     Subprogram ReturnBalance()
+        Return Balance
+     End Subprogram
+End Class

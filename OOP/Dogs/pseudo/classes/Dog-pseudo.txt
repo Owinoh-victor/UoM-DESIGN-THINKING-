@@ -1,0 +1,31 @@
+Define public class Dog
+	
+	Declare private field breed as String
+	Declare private field color as String
+	Declare private field sleeping as Bool set to False
+	Declare private field weight as Int
+	Declare private field timesBarked as Int
+	Declare public field name as String
+
+	Declare public constructor method Dog(name, breed, color, weight)
+		Set this.name to name
+		Set this.breed to breed
+		Set this.color to color
+		Set this.weight to weight
+
+	Declare public method bark()
+		if this.sleeping == False
+			if timesBarked >= 4
+				Set this.sleeping to True
+				Write "Woof!"
+			else
+				Write "Woof!"
+				Increment this.timesBarked by 1
+		else
+			Write "The dog is sleeping..."
+
+	Declare public method dogInfo()
+		Write "Dog breed:" + this.breed
+		Write "Dog Color:" + this.color
+		Write "Dog weight:" + this.weight
+		Write "Dog name:" + this.name

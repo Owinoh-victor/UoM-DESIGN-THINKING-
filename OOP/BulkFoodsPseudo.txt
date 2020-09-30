@@ -1,0 +1,73 @@
+Input:	Name of item, Price of item, weight in Pounds, weight ounces
+Problem Statement:	Determine the price per ounce a particular item costs and what the total price is
+Output:	Item Name, Unit price and total cost
+
+
+Variable Name	Datatype
+ItemName	String
+PoundPrice	Float
+WeightPounds	Integer
+WeightOunces	Integer
+UnitPrice	Float
+TotalPrice	Float
+
+
+30,000 foot view
+Get Inputs
+Determine Unit Price
+Determine Total Price
+Display Item Name, Unit Price and Total Price
+
+
+Pseudocode for class BulkFood(newPoundPrice, newItemName, newWeightPounds,
+                              new WeightOunces)
+
+Attributes
+	ItemName as string
+   	PoundPrice as float
+   	WeightPounds as int
+   	WeightOunces as int
+	UnitPrice as float
+	TotalPrice as float
+
+
+subprogram DetermineUnitPrice
+   	UnitPrice = PoundPrice/16
+end sub
+
+subprogram DetermineTotalPrice
+   	TotalPrice = PoundPrice * (WeightPounds + WeightOunces/16)
+end sub
+
+subprogram ReturnUnitPrice
+	Return UnitPrice
+end sub
+
+SubProgram ReturnTotalPrice
+	Return TotalPrice
+end sub
+SubProgram ReturnItemName
+	Return ItemName
+end sub
+
+end class
+
+Program pseudocode
+
+until UserContinue = "no"
+
+	Ask the user for ItemName, PoundPrice, WeightPounds, WeightOUnces
+	Create new object BulkFood
+	Display Item Name, Unit Price and Total Price
+	Ask user for another item
+end loop
+
+
+
+
+
+
+
+
+
+

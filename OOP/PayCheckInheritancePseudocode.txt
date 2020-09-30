@@ -1,0 +1,64 @@
+Public DeterminePay(NewHours, NewRate)
+	Constructor
+		Set NumHours = NewHours
+		Set Pay = NewRate
+		Set Gross = 0.0
+		Set Deduct = 0.0
+		Set Net = 0.0
+	End Constructor
+	Public Subprogram DetermineGross()
+		Gross = NumHours * Pay
+	End Subprogram
+	Public Subprogram DetermineDeduct()
+		Deduc = Gross * 0.35
+	End Subprogram
+	Public Subprogram DetermineNet()
+		Net = Gross – Deduc
+	End Subprogram
+	Public Function ReturnGross()
+		Return Gross
+	End Function
+	Public Function ReturnNet()
+		Return Net
+	End Function
+	Public Function ReturnDeductions()
+		Return Deduc
+	End Function
+
+Public DeterminePayRetirement(NewHours, NewRate)
+	Inherits DeterminePay
+	constructor
+		Set NumHours = NewHours
+		Set Pay = NewRate
+		Set Pay = NewRate
+		Set Gross = 0.0
+		Set Deduct = 0.0
+		Set Net = 0.0
+	End Constructor
+	Public Subprogram DetermineDeduct()
+		Deduc = Gross * 0.45
+	End Subprogram
+
+
+main()
+	#Declare Variables
+	Hours = 0.0
+	Rate = 0.0
+	Continue = string
+
+	Do Until Continue = “No”
+	#Get Hours worked and Pay Rate from the User
+		Write “Enter the number of hours worked.”
+		Input Hours
+		Write “Enter the pay rate”
+		Input Rate
+	#Determine Net Pay
+	MyPayCheck = New DeterminePayRetirement(Hours, Rate)
+	MyPayCheck.DetermineGross()
+	MyPayCheck.DetermineDeduct()
+	MyPayCheck.DetermineNet()
+
+	#Output Gross Pay, Deductions and Net Pay
+	Write “The employee’s Gross Pay is:  $” + MyPayCheck.ReturnGross()
+	Write “ The employee’s Deductions is:  $” + MyPayCheck.ReturnDeductions()
+	Write “The employee’s Net Pay is:  $” + MyPayCheck.ReturnNet()
