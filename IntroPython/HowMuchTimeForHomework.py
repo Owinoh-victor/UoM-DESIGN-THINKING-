@@ -1,5 +1,5 @@
 #Week 2 Demo
-#Written by:  Prof. Jenaway
+#Written by:  Victor Owinoh
 #Date:  8/27/2013
 
 #This program will tell us how much time we need to spend on Homework this term
